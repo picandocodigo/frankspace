@@ -1,0 +1,53 @@
+@import "resets";
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a{text-decoration: none;}
+
+@mixin menu_list{
+  ul { list-style-type: none; }
+  li { float: left; }
+}
+
+@mixin border_bottom($radius){
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin forms{
+  border: 0;
+  margin-left: 30px;
+  padding: 5px 10px;
+}
+
+.fields{
+  input{
+    @include forms;
+  }
+  textarea{
+    @include forms;
+  }
+
+  ul{
+    li{
+      padding: 20px;
+    }
+  }
+}
+.sendmail{
+    font-weight: bold;
+    border: 0;
+    &:hover{
+    }
+  }
+
+#footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-left: 10px;
+}
