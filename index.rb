@@ -1,5 +1,16 @@
 require 'sinatra'
+require 'sinatra/r18n'
+require 'haml'
 require 'sass'
+
+# Set default locale on session
+before do
+  if params[:locale]
+    session[:locale] = params[:locale] 
+  else
+    session[:locale] = 'en'
+  end
+end
 
 get '/stylesheet.css' do
   content_type 'text/css', :charset => 'utf-8'

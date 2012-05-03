@@ -2,12 +2,12 @@
   %fieldset.fields
     %ul
       %li
-        %label{:for=>"name"} Name
+        %label{:for=>"name"} #{t.contact.name}
         %input{:type=>"text", :name=>"name"}
       %li
-        %label{:for=>"mail"} Mail
+        %label{:for=>"mail"} #{t.contact.email}
         %input{:type=>"text", :name=>"mail"}
       %li
-        %label{:for =>"body"} Comments
+        %label{:for =>"body"} #{t.contact.message}
         %textarea{:name =>"body"}
-  %input{:type => "submit", :value => "Send", :class => "sendmail"}
+  %input{:type => "submit", :class => "sendmail", :value => t.contact.send_msg}

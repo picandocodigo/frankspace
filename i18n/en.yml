@@ -1,0 +1,10 @@
+general:
+  home: Home
+  header: Header
+
+contact:
+  name: Name
+  email: E-Mail
+  message: Message
+  send_msg: Send Message
+  success: Thanks for contacting!
