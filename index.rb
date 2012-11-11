@@ -33,6 +33,7 @@ post '/contact' do
     # Configured for Heroku here:
     :name => params[:name],
     :mail => params[:mail],
+    :from => params[:mail],
     :body => params[:body],
     # Change contact e-mail here:
     :to => 'someone@somewhere.com',
